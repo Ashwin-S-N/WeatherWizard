@@ -1,38 +1,149 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  display:flex;
   flex-direction: column;
+  background-color: #abc1ed;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  background-color: hsl(238, 80%, 22%);
+  padding: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height:40px;
+}
+
+input[type="text"] {
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 5px 5px 5px  5px;
+  width:450px;
+}
+
+button[type="submit"] {
+  background-color: #34a5c4;
+  color: rgb(215, 19, 19);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  height:40px;
+  width:35px;
+}
+
+.fa-search {
+  font-size: 20px;
+  color:rgb(16, 15, 22);
+
+}
+.nav-name {
+  color:rgb(255, 255, 255);
+  font-size:x-large;
+  font-family:"Impact",monospace; 
+  -webkit-text-stroke: 1px rgb(37, 119, 251);
+
+}
+
+.footer {
+  background-color: hsl(238, 80%, 22%);
+  height:80px;
+  font-family:'Courier New', Courier, monospace;
+  color:white;
+  text-align: center;
+  margin-top: 15px
+}
+.weather-box{
+  background-color: #abc1ed;
+  color:#240267;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin-top:-50px;
+  margin-bottom: -15px;
+  margin-left:0px;
+  text-align: center;
+  height:600px;
+}
+.condition-text {
+  font-weight: bold;
+}
+.current-temp {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 20px;
+  margin-top: 50px;
+  height:200px;
+
+}
+.current-date-text {
+  font-family: cursive;
+  margin-left: 20px;
+}
+
+.avgtemp-text {
+  margin-bottom: 50px;
+}
+
+.image-logo {
+  height:100px;
+  width: 100px;
+  margin-left: 10px;
+}
+.else-block { 
+  height:580px;
+  background-color: #abc1ed;
+  margin-top: -10px;
+  margin-bottom:-15px;
+  text-align:center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.forecast-card {
+  margin: 10px;
+  padding: 10px;
+  border: 0.5px dotted #1e1844; 
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 110px;
+  height: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.forecast-card img {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+.forecast-card h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.forecast-card .condition-text {
+  margin: 10px 0;
+}
+
+.forecast-card .avgtemp-text {
+  margin: 10px 0;
+  font-weight: bold;
 }
